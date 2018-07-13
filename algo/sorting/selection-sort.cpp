@@ -5,13 +5,15 @@ using namespace std;
 
 //Avg. Time Complexity: O(n^2)
 //Worst Time Complexity: O(n^2)
-//Extra-Space Complexity: O(1)
+//Extra Space Complexity: O(1)
 
 int main(){
 
     vector<int> a = {46, 78, 23, 56, 12, 23, 9, 18, 4, 11};
     int n = a.size();
 
+    //selection sort
+    
     for(int i=0; i<n-1; i++){
         //a[0,..,i-1] are the first minimum i elements
         

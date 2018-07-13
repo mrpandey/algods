@@ -5,12 +5,14 @@ using namespace std;
 
 //Avg. Time Complexity: O(n^2)
 //Worst Time Complexity: O(n^2)
-//Extra-Space Complexity: O(1)
+//Extra Space Complexity: O(1)
 
 int main(){
     
     vector<int> a = {45, 56, 23, 8, 7, 4, 10, 34, 12, 25, 19};
     int n = a.size();
+
+    //bubble sort
 
     int temp=0;
     bool swapped = true;
