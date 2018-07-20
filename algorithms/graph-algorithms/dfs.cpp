@@ -1,10 +1,11 @@
 #include<iostream>
+#include<stack>
 #include<vector>
-#include<queue>
 
 using namespace std;
 
 int main(){
+
     //graph represented as adjacency list
     vector<vector<int> > adj = {
         {1,2,3},
@@ -18,37 +19,34 @@ int main(){
         {7},
     };
 
-    //bfs
+    //dfs
 
-    //nodes that are encountered first
-    //are visited first
-    queue<int> q;
-
-    //vis keeps track whether node is visited
+    stack<int> s;
+    
+    //vis[u]==true iff u is visited
     vector<bool> vis(adj.size(), false);
 
-    //add node where traversal will begin
-    q.push(0);
+    s.push(0);
     vis[0] = true;
+
     int u=0;
 
-    while(!q.empty()){
-        
-        //u is current node
-        u = q.front();
-        q.pop();
+    while(!s.empty()){
+        u = s.top();
+        s.pop();
+
         cout << u << " ";
 
-        //add unvisited neighbours of u to q
         for(int v:adj[u]){
             if(!vis[v]){
-                q.push(v);
+                s.push(v);
                 vis[v] = true;
             }
         }
     }
-    
+
     cout << endl;
 
-    //output: 0 1 2 3 4 5 6 7 8
+    //output: 0 3 6 7 8 4 5 2 1
+    //compare this with bfs output
 }
