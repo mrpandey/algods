@@ -4,6 +4,16 @@
 
 using namespace std;
 
+//E=no. of edges
+//V=no. of vertics (nodes)
+//Time complexity: O(V+E)
+//Extra-Space Complexity: O(n)
+
+//https://stackoverflow.com/questions/11468621/why-is-the-time-complexity-of-both-dfs-and-bfs-o-v-e
+
+//further the time complexity will be O(v^2)
+//when using adjacency matrix instead of adjacency list
+
 int main(){
     //graph represented as adjacency list
     vector<vector<int> > adj = {
