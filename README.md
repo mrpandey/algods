@@ -23,10 +23,10 @@ These have been added so far:
     - [Breadth First Search](https://github.com/mrpandey/fundamentals/blob/master/algorithms/graph-algorithms/bfs.cpp)
     - [Depth First Search](https://github.com/mrpandey/fundamentals/blob/master/algorithms/graph-algorithms/dfs.cpp)
 
-  - **Data Structures**
+- **Data Structures**
 
-    - [Stack](https://github.com/mrpandey/fundamentals/blob/master/data-structures/stack.cpp)
-    - [Queue](https://github.com/mrpandey/fundamentals/blob/master/data-structures/queue.cpp)
+  - [Stack](https://github.com/mrpandey/fundamentals/blob/master/data-structures/stack.cpp)
+  - [Queue](https://github.com/mrpandey/fundamentals/blob/master/data-structures/queue.cpp)
 
 
 ## License
