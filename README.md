@@ -27,6 +27,7 @@ These have been added so far:
 
   - [Stack](https://github.com/mrpandey/fundamentals/blob/master/data-structures/stack.cpp)
   - [Queue](https://github.com/mrpandey/fundamentals/blob/master/data-structures/queue.cpp)
+  - [Max Heap](https://github.com/mrpandey/fundamentals/blob/master/data-structures/maxheap.cpp)
 
 
 ## License
