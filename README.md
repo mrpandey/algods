@@ -16,10 +16,14 @@ These have been added so far:
     - [Merge Sort](https://github.com/mrpandey/fundamentals/blob/master/algorithms/sorting/merge-sort.cpp)
     - [Quick Sort](https://github.com/mrpandey/fundamentals/blob/master/algorithms/sorting/quick-sort.cpp)
 
-  - **Graph Algorithms**
+  - **Graph**
 
     - [Breadth First Search](https://github.com/mrpandey/fundamentals/blob/master/algorithms/graph-algorithms/bfs.cpp)
     - [Depth First Search](https://github.com/mrpandey/fundamentals/blob/master/algorithms/graph-algorithms/dfs.cpp)
+  
+  - **String**
+  
+    - [KMP](https://github.com/mrpandey/algods/blob/master/algorithms/string/kmp.cpp)
 
 - **Data Structures**
 
