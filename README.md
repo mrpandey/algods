@@ -1,6 +1,4 @@
-# fundamentals
-
-This is the place where I keep the fundamental stuff I have learned in programming and computer science.
+# algods
 
 It includes common algorithms and data-structure implementations. The code is written in C++ and is well-commented (or maybe I tend to think so).
 
