@@ -1,6 +1,6 @@
 # algods
 
-It includes common algorithms and data-structure implementations. The code is written in C++ and is well-commented (or maybe I tend to think so).
+It includes common algorithms and data-structure implementations. The code is written in C++.
 
 ## Table of Contents
 
@@ -26,6 +26,7 @@ These have been added so far:
   - [Stack](https://github.com/mrpandey/fundamentals/blob/master/data-structures/stack.cpp)
   - [Queue](https://github.com/mrpandey/fundamentals/blob/master/data-structures/queue.cpp)
   - [Max Heap](https://github.com/mrpandey/fundamentals/blob/master/data-structures/maxheap.cpp)
+  - [Binary Search Tree](https://github.com/mrpandey/fundamentals/blob/master/data-structures/bst.cpp)
 
 
 ## License
