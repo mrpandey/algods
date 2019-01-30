@@ -35,4 +35,4 @@ These have been added so far:
 
 ## License
 
-Copyright (c) 2018 [Avinash Pandey](http://mrpandey.com). Licensed under [WTFPL](https://github.com/mrpandey/fundamentals/blob/master/LICENSE).
+Licensed under [WTFPL](https://github.com/mrpandey/fundamentals/blob/master/LICENSE).
