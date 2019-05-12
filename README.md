@@ -18,8 +18,8 @@ These have been added so far:
 
   - **Graph**
 
-    - [Breadth First Search](https://github.com/mrpandey/fundamentals/blob/master/algorithms/graph-algorithms/bfs.cpp)
-    - [Depth First Search](https://github.com/mrpandey/fundamentals/blob/master/algorithms/graph-algorithms/dfs.cpp)
+    - [Breadth First Search](https://github.com/mrpandey/fundamentals/blob/master/algorithms/graph/bfs.cpp)
+    - [Depth First Search](https://github.com/mrpandey/fundamentals/blob/master/algorithms/graph/dfs.cpp)
   
   - **String**
   
