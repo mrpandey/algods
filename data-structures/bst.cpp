@@ -97,54 +97,40 @@ Node* BST::removeNode(Node* nd, int const &x) {
     
     if(x < nd->val) {
         nd->left = removeNode(nd->left, x);
+        return nd;
     }
-
-    else if(x > nd->val) {
+    if(x > nd->val) {
         nd->right = removeNode(nd->right, x);
+        return nd;
     }
 
-    //nd->val==x
+    //cases for nd->val==x below
 
-    else if(!nd->left) {
+    //no child
+    if(!nd->left && !nd->right){
+        delete nd;
+        return NULL;
+    }
+    //only right child
+    if(!nd->left) {
         temp = nd->right;
         delete nd;
         return temp;
     }
-
-    else if(!nd->right) {
+    //only left child
+    if(!nd->right) {
         temp = nd->left;
         delete nd;
         return temp;
     }
 
     //nd has both childs
-
-    else if(!nd->right->left) {
-
-        //nd->right is inorder successor of nd
-
-        temp = nd->right;
-        nd->val = temp->val;
-        nd->right = temp->right;
-        delete temp;
-    }
-
-    else {
-        Node *parent = nd->right;
-        Node *child = nd->right->left;
-
-        while(child->left) {
-            parent = child;
-            child = child->left;
-        }
-
-        //child is inorder successor of nd
-
-        nd->val = child->val;
-        parent->left = child->right;
-        delete child;
-    }
-
+    //swap value with inorder successor, and delete successor
+    Node* succ = nd->right;
+    while(succ->left) succ = succ->left;
+    nd->val = succ->val;
+    succ->val = x;
+    nd->right = removeNode(nd->right, x);
     return nd;
 }
 
@@ -184,7 +170,6 @@ int main() {
 
     t.remove(40);
     cout << t.size() << "\n";   //8
-
     t.print();  //-1 20 25 35 38 42 45 50
 
     t.remove(45);

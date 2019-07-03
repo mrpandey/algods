@@ -5,8 +5,8 @@
 using namespace std;
 
 // simple implementation of dijkstra algorithm with adjacency list
-// time complexity: O(2E + V^2) = O(V^2)
-// 2E for traversing through adjacency list
+// time complexity: O(V+E + V^2) = O(V^2)
+// V+E for traversing through adjacency list
 // V^2 because while loop runs V times and in each while loop entire d[] is scanned
 
 int main(){
