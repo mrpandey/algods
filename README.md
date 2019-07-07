@@ -1,6 +1,6 @@
 # algods
 
-It includes common algorithms and data-structure implementations. The code is written in C++.
+It includes C++ implementations of common algorithms and data-structures. Most files are well-commented (or maybe I just tend to believe so).
 
 ## Table of Contents
 
@@ -21,6 +21,7 @@ These have been added so far:
     - [Breadth First Search](https://github.com/mrpandey/fundamentals/blob/master/algorithms/graph/bfs.cpp)
     - [Depth First Search](https://github.com/mrpandey/fundamentals/blob/master/algorithms/graph/dfs.cpp)
     - [Dijkstra's Algorithm (Simple Implementation)](https://github.com/mrpandey/algods/blob/master/algorithms/graph/dijkstra-simple.cpp)
+    - [Bellman-Ford Algorithm](https://github.com/mrpandey/algods/blob/master/algorithms/graph/bellman-ford.cpp)
   
   - **String**
   
