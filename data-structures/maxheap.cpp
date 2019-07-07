@@ -14,6 +14,7 @@ class Maxheap {
         int size();
         bool empty();
         void heapify(int, int&);
+        bool find(const int&);
         int top();
         void push(int);
         void pop();
@@ -47,6 +48,7 @@ bool Maxheap::empty(){
 }
 
 //puts the element at i at right place
+//time complexity: O(log n)
 void Maxheap::heapify(int i, int &sz){
     //left and right childs
     int l=2*i+1, r=l+1;
@@ -65,6 +67,14 @@ void Maxheap::heapify(int i, int &sz){
     }
 }
 
+//time complexity: O(n)
+bool Maxheap::find(const int &x){
+    for(int i=0; i<a.size(); i++){
+        if(a[i]==x) return true;
+    }
+    return false;
+}
+
 //return the max-element (root value)
 int Maxheap::top(){
     try {
@@ -74,10 +84,14 @@ int Maxheap::top(){
     }
     catch(string msg) {
         cout << msg;
+        return -1;
     }
 }
 
 //insert into heap
+//time complexity: O(n) worst, O(1) avg
+//worst case is O(n) because sometimes vector reallocates space on push_back
+//for avg complexity see: https://stackoverflow.com/a/29548834/8216204
 void Maxheap::push(int x){
     a.push_back(x);
     
@@ -96,6 +110,7 @@ void Maxheap::push(int x){
 }
 
 //remove root
+//time complexity: O(log n) (worst and avg)
 void Maxheap::pop(){
     try{
         int sz = a.size();
@@ -122,10 +137,12 @@ int main(){
 
     cout << h.size() << endl;   //7
     cout << h.top() << endl;    //10
+    cout << h.find(10) << endl; //1
 
     h.pop();
     cout << h.size() << endl;   //6
     cout << h.top() << endl;    //8
+    cout << h.find(10) << endl; //0
 
     h.push(9);
     cout << h.size() << endl;   //7
