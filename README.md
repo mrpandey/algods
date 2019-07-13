@@ -31,7 +31,8 @@ These have been added so far:
 
   - [Stack](https://github.com/mrpandey/fundamentals/blob/master/data-structures/stack.cpp)
   - [Queue](https://github.com/mrpandey/fundamentals/blob/master/data-structures/queue.cpp)
-  - [Max Heap](https://github.com/mrpandey/fundamentals/blob/master/data-structures/maxheap.cpp)
+  - [Binary Max Heap (Using Dynamic Array)](https://github.com/mrpandey/fundamentals/blob/master/data-structures/maxheap.cpp)
+  - [Binary Max Heap (Using Linked List)](https://github.com/mrpandey/fundamentals/blob/master/data-structures/maxheap-linked-list.cpp)
   - [Binary Search Tree](https://github.com/mrpandey/fundamentals/blob/master/data-structures/bst.cpp)
 
 
