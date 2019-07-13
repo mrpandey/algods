@@ -4,13 +4,14 @@ using namespace std;
 
 class Node {
 public:
-
     int val;
     Node *left, *right;
-
-    Node(): left(NULL), right(NULL) {};
-    Node(int v): val(v), left(NULL), right(NULL) {};
+    Node();
+    Node(int);
 };
+
+Node::Node(): left(NULL), right(NULL) {};
+Node::Node(int v): val(v), left(NULL), right(NULL) {};
 
 class BST {
     Node *root;
@@ -18,20 +19,34 @@ class BST {
     
     void inorderPrint(Node*);
     Node* removeNode(Node*, const int &);
+    void destructTree(Node*);
 
 public:
 
-    BST(){
-        root = NULL;
-        sz = 0;
-    }
-
+    BST();
+    ~BST();
     bool find(const int &);
     void insert(const int &);
     void print();
     void remove(const int &);
     int size();
 };
+
+BST::BST(){
+    root = NULL;
+    sz = 0;
+}
+
+BST::~BST(){
+    destructTree(root);
+}
+
+void BST::destructTree(Node* nd){
+    if(!nd) return;
+    destructTree(nd->left);
+    destructTree(nd->right);
+    delete nd;
+}
 
 bool BST::find(const int &x) {
     Node *nd = root;
