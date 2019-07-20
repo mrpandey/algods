@@ -30,7 +30,6 @@ int main(){
     vector<int> d(n, -1);
 
     // node 0 is source
-    // vis[0] = true;
     d[0] = 0;
     int curr=0, nbr, wt, minNbr;
 
@@ -39,7 +38,7 @@ int main(){
         vis[curr] = true;
         minNbr = -1;
 
-        //set distances of nbrs of curr node
+        //set distances of neighbours of curr node
         for(int i=0; i<adj[curr].size(); i++){
             nbr = adj[curr][i][0];
             if(vis[nbr]) continue;

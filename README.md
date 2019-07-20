@@ -21,6 +21,7 @@ These have been added so far:
     - [Breadth First Search](https://github.com/mrpandey/fundamentals/blob/master/algorithms/graph/bfs.cpp)
     - [Depth First Search](https://github.com/mrpandey/fundamentals/blob/master/algorithms/graph/dfs.cpp)
     - [Dijkstra's Algorithm (Simple Implementation)](https://github.com/mrpandey/algods/blob/master/algorithms/graph/dijkstra-simple.cpp)
+    - [Dijkstra's Algorithm (Using Min Heap without decrease-key)](https://github.com/mrpandey/algods/blob/master/algorithms/graph/dijkstra-minheap.cpp)
     - [Bellman-Ford Algorithm](https://github.com/mrpandey/algods/blob/master/algorithms/graph/bellman-ford.cpp)
   
   - **String**
