@@ -11,11 +11,12 @@
 using namespace std;
 
 // implementation of dijkstra algorithm with adjacency list and min binary heap (priority_queue)
+// this implementation is better suited for SPARSE GRAPHS i.e. graphs with low number of edges
 // time complexity: O( VlogV + ElogV ) = O( (V+E)logV ) which becomes O( ElogV ) when graph is dense.
 // VlogV because while loop runs V times, and each time we pop the nearest node in logV
 // ElogV because the for loop inside while loop runs E times, and a node may be pushed in logV
 
-// NOTE: priority_queue in STL does not supports decrease priority function.
+// NOTE: priority_queue in STL does not supports decrease-priority function.
 // So when we update a node's distance, we re-push it into queue.
 // Among the duplicates, the one with least distance is popped first and utilised.
 // When the rest duplicates are encountered, we simply pop them without utilising because they are redundant.
@@ -23,6 +24,11 @@ using namespace std;
 // So time complexity is O( ElogE + ElogE ) = O( ElogE )
 // Since E<=V^2, this complexity is same as previous one (ElogV).
 // Read answers on this post: https://stackoverflow.com/questions/9255620/why-does-dijkstras-algorithm-use-decrease-key
+
+// dijkstra's algorithm works for directed/undirected graph with non-negative weights
+// parallel edges and self-loops are okay as long as they have non-negative weights
+// If parallel edges are there, then E isn't bounded by V^2
+// Among parallel edges, its best to consider only those edges with least weights (not done in this implementation)
 
 int main(){
 
