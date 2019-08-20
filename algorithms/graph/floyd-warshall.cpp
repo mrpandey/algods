@@ -16,6 +16,8 @@ using namespace std;
 //time-complexity: O(V^3)
 //space-complexity: O(V^2)
 
+//relevant link: https://math.stackexchange.com/questions/2952099/algorithm-for-modifying-graph-with-negative-cycles-to-be-able-to-conduct-floyd-w
+
 int main(){
 
     vector<vector<int> > edges = {
