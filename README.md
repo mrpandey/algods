@@ -23,6 +23,8 @@ These have been added so far:
     - [Dijkstra's Algorithm (Simple Implementation)](https://github.com/mrpandey/algods/blob/master/algorithms/graph/dijkstra-simple.cpp)
     - [Dijkstra's Algorithm (Using Min Heap without decrease-key)](https://github.com/mrpandey/algods/blob/master/algorithms/graph/dijkstra-minheap.cpp)
     - [Bellman-Ford Algorithm](https://github.com/mrpandey/algods/blob/master/algorithms/graph/bellman-ford.cpp)
+    - [Prim's Algorithm (Simple Implementation)](https://github.com/mrpandey/algods/blob/master/algorithms/graph/prims-simple.cpp)
+    - [Floyd-Warshall Algorithm](https://github.com/mrpandey/algods/blob/master/algorithms/graph/floyd-warshall.cpp)
   
   - **String**
   
