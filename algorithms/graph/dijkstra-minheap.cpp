@@ -12,9 +12,11 @@ using namespace std;
 
 // implementation of dijkstra algorithm with adjacency list and min binary heap (priority_queue)
 // this implementation is better suited for SPARSE GRAPHS i.e. graphs with low number of edges
+
 // time complexity: O( VlogV + ElogV ) = O( (V+E)logV ) which becomes O( ElogV ) when graph is dense.
 // VlogV because while loop runs V times, and each time we pop the nearest node in logV
 // ElogV because the for loop inside while loop runs E times, and a node may be pushed in logV
+// space complexity: O(E), at max one entry in queue per edge
 
 // NOTE: priority_queue in STL does not supports decrease-priority function.
 // So when we update a node's distance, we re-push it into queue.

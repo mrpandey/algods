@@ -9,6 +9,7 @@ using namespace std;
 // time complexity: O(V+E + V^2) = O(V^2)
 // V+E for traversing through adjacency list
 // V^2 because while loop runs V times and in each while loop entire d[] is scanned
+// space complexity: O(V) for vis and d
 
 int main(){
 

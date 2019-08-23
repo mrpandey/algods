@@ -7,7 +7,7 @@ using namespace std;
 //bellman-ford is used to find shortes path length of all nodes from SINGLE SOURCE
 
 //time complexity: O(VE) when graph is given as edge list
-//time complexity: O( V(V+E) ) when graph is given as adjacency list
+//space complexity: O(V) for storing d
 
 //bellman-ford works for directed/undirected weighted graphs
 //with possible negative weights, but NO NEGATIVE CYCLES.
