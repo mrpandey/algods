@@ -44,4 +44,4 @@ These have been added so far:
 
 ## License
 
-Licensed under [WTFPL](https://github.com/mrpandey/fundamentals/blob/master/LICENSE).
+Licensed under [WTFPL](https://github.com/mrpandey/algods/blob/master/LICENSE).
