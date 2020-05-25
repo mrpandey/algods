@@ -18,8 +18,18 @@ int main(){
 	//of s[0..i] which is also suffix of s[0..i]
 	int lps[l] = {0};
 
-	//lps construction
+	// lps construction
+	/* complexity is O(l) because:
+		1. i is incremented at most l times
+		2. j is incremented only when i is incremented, hence at most l increments of j
+		3. since j-increments is at most l, j isn't decreaesed more than l times in total
+	*/
+	
 	for(int j=0, i=1; i<l;){
+		// lps[0..i-1] has been calculated
+		// s[0...j-1] is a suffix of s[0...i-1]
+		// we need to calculate lps[i]
+
 		if(s[j]==s[i]) {
 			lps[i++] = ++j;
 		}
@@ -27,11 +37,15 @@ int main(){
 			lps[i++] = 0;
 		}
 		else {
+			// find next highest j such that s[0...j-1] is suffix of s[0...i-1]
 			j = lps[j-1];
 		}
 	}
 
-	//searching
+	// Searching begins
+	// an alternative to following is simply find lps of s+"$"+t
+	// and look for indices with lps[i]==l
+
 	int i=0, j=0, ctr=0;
 	while(i<n){
 		if(s[j]==t[i]){
